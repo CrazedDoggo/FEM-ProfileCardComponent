@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+  </style> 
+  
+  <title>Frontend Mentor | Profile Card Component</title>
+  <script type="application/ld+json">
+    {
+       "@context": "https://schema.org/",
+       "@type": "Person",
+       "name": "Victor Crest",
+       "gender": "Male",  
+       "interactionStatistic": [
+          {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/FollowAction",
+          "userInteractionCount": 80000
+          }
+          {
+            "@type": "InteractionCounter",
+            "interactionType": "https://schema.org/LikeAction",
+            "userInteractionCount": 803000
+          }     
+       ]
+       "image": "test"
+    }
+  </script>
+</head>
+<body>
+  <img src="images/bg-pattern-top.svg" alt="" class="bg-top">
+  <div class="card">
+    <div class="banner"></div>
+    <section class="bio" itemscope itemtype="https://schema.org/Person">
+      <img src="images/image-victor.jpg" alt="User Image of Victor Crest" class="bio-img" itemprop="image">
+      <span class = "bio-info">
+        <h1 itemprop="name">Victor Crest</h1>
+        <p class="age">26</p>
+      </span>
+      <p class = "city">London</p>
+    </section>
+    <section class = "stats" itemscope itemtype=https://schema.org/interactionStatistic"">
+      <ul>
+        <li class = "stat" itemprop="InteractionCounter">
+          <h3>80K</h3>
+          <p>Followers</p>
+        </li>
+        <li class = "stat" itemprop="InteractionCounter">
+          <h3>803K</h3>
+          <p>Likes</p>
+        </li>
+        <li class = "stat" itemprop="InteractionCounter">
+          <h3>1.4K</h3>
+          <p>Photos</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/CrazedDoggo">Crazed Doggo</a>.
+  </div>
+  <img src="images/bg-pattern-bottom.svg" alt="" class="bg-bottom">
+</body>
+</html>

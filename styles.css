@@ -1,0 +1,117 @@
+/*ATTRIBUTION ||*/
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: white;
+}
+.attribution a { 
+    color: white; 
+}
+
+/*GENERAL ||*/
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: hsl(0, 0%, 59%);
+
+    --large-font: 1.125rem;
+    --main-font: 'Kumbh Sans', Arial, Helvectica, sans-serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--dark-cyan);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+/*TYPOGRAPHY ||*/
+
+p {
+    margin-top: .8em;
+    color: var(--dark-gray)
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1, h3 {
+    color: var(--desaturated-blue)
+}
+h1, h3, .age {
+    margin: 0;
+    font-size: var(--large-font);
+}
+.stat p {
+    letter-spacing: 2px;
+    font-size: .7rem;
+}
+
+.bio-img {
+    margin-top: -5em;
+    margin-bottom: 1em;
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 100%;
+}
+.banner {
+    height: 9em;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.stats {
+    border-top: 1px solid rgb(228, 228, 228);
+}
+
+/*LAYOUT ||*/
+
+.bg-top, .bg-bottom {
+    position: absolute;
+    z-index: -1;
+}
+.bg-top {
+    bottom: 40%;
+    right: 50%;
+}
+.bg-bottom {
+    left: 50%;
+    top: 50%;
+}
+
+.bio-info {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+.card {
+    border-radius: 10px;
+    width: 21em;
+    text-align: center;
+    background-color: white;
+}
+.card > section {
+    padding: 1.5em;
+}
+
+.stats ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
