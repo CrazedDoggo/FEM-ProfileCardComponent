@@ -26,7 +26,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [https://github.com/CrazedDoggo/FEM-ProfileCardComponent](https://github.com/CrazedDoggo/FEM-ProfileCardComponent)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://crazeddoggo.github.io/FEM-ProfileCardComponent/](https://crazeddoggo.github.io/FEM-ProfileCardComponent/)
 
 ## My process
 
